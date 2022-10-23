@@ -13,7 +13,14 @@
 // limitations under the License.
 
 import variables, { sayHi } from "./Node/Fundamentals.js";
+import { currentOs, sayHi as _sayHi } from "./Node/utils.js";
+import path from "path";
+import { startmyServer } from "./Node/Http.js";
 
 console.log(variables);
-
+_sayHi();
 sayHi("Mom");
+console.log(currentOs);
+console.log(path.sep);
+console.log("normalised path :", path.join("content", "subfolder", "test.txt"));
+startmyServer();

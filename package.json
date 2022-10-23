@@ -1,0 +1,25 @@
+{
+  "name": "javascript_node_and_express",
+  "version": "1.0.0",
+  "description": "Lern Node js and Express Js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alainQtec/Javascript_Node_and_Express.git"
+  },
+  "keywords": [
+    "Javascript",
+    "node",
+    "Express"
+  ],
+  "author": "alainQtec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alainQtec/Javascript_Node_and_Express/issues"
+  },
+  "homepage": "https://github.com/alainQtec/Javascript_Node_and_Express#readme"
+}

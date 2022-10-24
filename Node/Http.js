@@ -1,5 +1,4 @@
 import http from "http";
-import express from "express";
 
 export function startmyServer(req, res) {
   const server = http.createServer((req, res) => {

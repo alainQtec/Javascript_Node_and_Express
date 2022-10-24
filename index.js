@@ -16,7 +16,7 @@ import variables, { sayHi } from "./Node/Fundamentals.js";
 import { currentOs, sayHi as _sayHi } from "./Node/utils.js";
 import path from "path";
 import { startmyServer } from "./Node/Http.js";
-import { readFile } from "fs/promises";
+import { readFile } from "fs";
 
 function testImportedStuff() {
   console.log(variables);
@@ -35,7 +35,13 @@ readFile("./assets/file-one.txt", "utf8", (err, res) => {
     return console.log(err);
   }
   console.log(res);
-  console.log("Completed the first Task");
+  console.log("Completed Task one");
 });
 console.log("starting the next task");
+console.log("Starting task 2");
+console.log("t2_ 1");
+setTimeout(() => {
+  console.log("t2_ 2");
+}, 0);
+console.log("t2_ 3");
 // startmyServer();

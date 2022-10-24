@@ -13,10 +13,10 @@
 // limitations under the License.
 
 import variables, { sayHi } from "./Node/Fundamentals.js";
-import { currentOs, sayHi as _sayHi } from "./Node/utils.js";
+import { currentOs, getText, sayHi as _sayHi } from "./Node/utils.js";
 import path from "path";
-import { startmyServer } from "./Node/Http.js";
-import { readFile } from "fs";
+import EventEmitter from "events";
+// import { startmyServer } from "./Node/Http.js";
 
 function testImportedStuff() {
   console.log(variables);
@@ -30,13 +30,14 @@ function testImportedStuff() {
   );
 }
 console.log("starting the first task");
-readFile("./assets/file-one.txt", "utf8", (err, res) => {
-  if (err) {
-    return console.log(err);
+getText("./assets/file-one.txt").then(
+  (result) => {
+    console.log(result);
+  },
+  (err) => {
+    console.log(err);
   }
-  console.log(res);
-  console.log("Completed Task one");
-});
+);
 console.log("starting the next task");
 console.log("Starting task 2");
 console.log("t2_ 1");
@@ -44,4 +45,10 @@ setTimeout(() => {
   console.log("t2_ 2");
 }, 0);
 console.log("t2_ 3");
+
+const eventE = new EventEmitter();
+eventE.on("response", () => {
+  console.log("data recieved");
+});
+eventE.emit("response");
 // startmyServer();

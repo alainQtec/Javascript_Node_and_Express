@@ -1,1 +1,1 @@
-console.log('Task Manager App')
+`Task Manager App` |> console.log

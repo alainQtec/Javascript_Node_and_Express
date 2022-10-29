@@ -14,7 +14,7 @@
 
 import variables, { sayHi } from "./Node/Fundamentals.js";
 import { currentOs, getText, sayHi as _sayHi } from "./Node/utils.js";
-import path from "path";
+import path from 'path';
 import EventEmitter from "events";
 // import { startmyServer } from "./Node/Http.js";
 

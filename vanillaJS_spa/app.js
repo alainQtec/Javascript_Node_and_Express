@@ -30,5 +30,3 @@ window.route = (e) => {
 };
 window.onpopstate = handleLocation;
 handleLocation().then((r) => console.log(r));
-
-console.log("app running ...");

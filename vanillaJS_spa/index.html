@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>SPA router</title>
-    <link rel="stylesheet" href="style.css">
-<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ndi/font">-->
-</head>
-<body>
-<div id="root">
-    <nav id="main-nav" class="sidebar">
-        <a href="/" onclick="route()">Home<span class="tooltip-text">View HomePage</span></a>
-        <a href="/Dashboard" onclick="route()">Dashboard<span class="tooltip-text">view the dashboard</span></a>
-        <a href="/Settings" onclick="route()">Settings<span class="tooltip-text">View Settings</span></a>
-    </nav>
-    <div id="main-page"></div>
-</div>
-<script src="router.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SPA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <nav id="main-nav" class="sidebar">
+        <a href="/" onclick="route()"
+          >Home<span class="tooltip-text">View HomePage</span></a
+        >
+        <a href="/Dashboard" onclick="route()"
+          >Dashboard<span class="tooltip-text">view the dashboard</span></a
+        >
+        <a href="/Settings" onclick="route()"
+          >Settings<span class="tooltip-text">View Settings</span></a
+        >
+      </nav>
+      <div id="main-page"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "vanilla javascript single page app",
   "main": "index.html",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon app.js",
-    "start": "index.html",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
